@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Impressum – Schiesskompass</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/png" href="assets/logo-180.png">
+    <link rel="apple-touch-icon" href="assets/logo-180.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.png" alt="Schiesskompass-Logo">Schiesskompass</a>
+            <nav class="nav">
+                <a href="index.html">Start</a>
+                <a href="katalog.html">Katalog</a>
+                <a href="einreichen.html">Einreichen</a>
+                <a href="hilfe.html">Hilfe</a>
+                <a href="glossar.html">Glossar</a>
+                <a href="ueber.html">Über &amp; Kontakt</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="impressum.html" class="active">Impressum</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="wrap">
+            <h1>Impressum</h1>
+
+            <h2>Verantwortlich für den Inhalt</h2>
+            <p>
+                herzogs.ch<br>
+                Neuhofstrasse 5, 8834 Schindellegi<br>
+                Schweiz<br>
+                DUNS-Nr.: 48-026-3012
+            </p>
+
+            <h2>Kontakt</h2>
+            <p>
+                E-Mail: <a href="mailto:developer@herzogs.ch">developer@herzogs.ch</a>
+            </p>
+
+            <h2>Zum Projekt</h2>
+            <p>
+                Schiesskompass ist ein privates, nicht-kommerzielles Projekt für Schweizer
+                Sportschützen. Der öffentliche Katalog wird auf GitHub gepflegt:
+                <a href="https://github.com/Sportschuetze/Schiesskompass">github.com/Sportschuetze/Schiesskompass</a>.
+            </p>
+
+            <h2>Haftungsausschluss</h2>
+            <p>
+                Die Inhalte dieser Webseite werden mit Sorgfalt erstellt. Für Richtigkeit,
+                Vollständigkeit und Aktualität – insbesondere der Katalogdaten – wird jedoch keine
+                Gewähr übernommen. Massgebend sind stets die offiziellen Ausschreibungen und
+                Reglemente der jeweiligen Verbände und Vereine.
+            </p>
+
+            <p class="muted"><em>Hinweis: Bitte vor Veröffentlichung die Platzhalter ausfüllen.</em></p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>© <span id="year"></span> Schiesskompass</span>
+            <span><a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a></span>
+        </div>
+    </footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

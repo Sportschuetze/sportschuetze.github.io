@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katalog – Schiesskompass</title>
+    <meta name="description" content="Offizielle Schiessprogramme, Passen, Kranz-Anforderungen und Scheiben im Schiesskompass-Katalog – öffentlich einsehbar.">
+    <link rel="icon" type="image/png" href="assets/logo-180.png">
+    <link rel="apple-touch-icon" href="assets/logo-180.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.png" alt="Schiesskompass-Logo">Schiesskompass</a>
+            <nav class="nav">
+                <a href="index.html">Start</a>
+                <a href="katalog.html" class="active">Katalog</a>
+                <a href="einreichen.html">Einreichen</a>
+                <a href="hilfe.html">Hilfe</a>
+                <a href="glossar.html">Glossar</a>
+                <a href="ueber.html">Über &amp; Kontakt</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="wrap">
+            <h1>Katalog</h1>
+            <p class="muted">
+                Offizielle Schiessprogramme, Passen, Kranz-Anforderungen und Scheiben.
+                Nur-Lesen-Ansicht des publizierten Katalogs
+                (<span id="version-label">wird geladen …</span>).
+            </p>
+
+            <div class="tabbar" role="tablist">
+                <button data-tab="programs" class="active">Programme</button>
+                <button data-tab="targets">Scheiben</button>
+            </div>
+
+            <div class="toolbar">
+                <input type="search" id="q" placeholder="Suchen …" autocomplete="off">
+                <select id="filter-discipline"><option value="">Alle Disziplinen</option></select>
+            </div>
+
+            <div id="view-programs"></div>
+            <div id="view-targets" hidden></div>
+            <div id="status" class="status">Katalog wird geladen …</div>
+
+            <section class="sources" id="sources">
+                <h2>Quellen &amp; Transparenz</h2>
+                <p id="sources-text">
+                    Die Katalogdaten beruhen auf den offiziellen Ausschreibungen, Reglementen und
+                    Auszeichnungs-Bestimmungen des <a href="https://www.swissshooting.ch">Schweizer
+                    Schiesssportverbands (SSV)</a>. Massgebend bleiben stets die offiziellen Dokumente
+                    der Verbände und Vereine.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>© <span id="year"></span> Schiesskompass</span>
+            <span>
+                <a href="datenschutz.html">Datenschutz</a> ·
+                <a href="impressum.html">Impressum</a> ·
+                <a href="https://github.com/Sportschuetze/Schiesskompass">Katalog-Repository</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

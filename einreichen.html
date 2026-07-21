@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vereinsprogramm einreichen – Schiesskompass</title>
+    <meta name="description" content="Vereine können ihr Jahresprogramm für den Schiesskompass-Katalog einreichen – als PDF, Excel oder Numbers.">
+    <link rel="icon" type="image/png" href="assets/logo-180.png">
+    <link rel="apple-touch-icon" href="assets/logo-180.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.png" alt="Schiesskompass-Logo">Schiesskompass</a>
+            <nav class="nav">
+                <a href="index.html">Start</a>
+                <a href="katalog.html">Katalog</a>
+                <a href="einreichen.html" class="active">Einreichen</a>
+                <a href="hilfe.html">Hilfe</a>
+                <a href="glossar.html">Glossar</a>
+                <a href="ueber.html">Über &amp; Kontakt</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="wrap">
+            <h1>Vereinsprogramm einreichen</h1>
+            <p class="muted">
+                Fehlt euer Verein im Katalog oder habt ihr ein neues Jahresprogramm? Reicht es ein –
+                wir bereiten es auf und nehmen es in den öffentlichen Schiesskompass-Katalog auf.
+            </p>
+
+            <h2>Auch vereinsinterne Programme</h2>
+            <p>
+                Neben den offiziellen Jahresprogrammen kannst du auch <strong>vereinsinterne
+                Programme und Stiche</strong> melden – zum Beispiel euren Vereinsstich oder eine
+                interne Meisterschaft. Sobald sie erfasst sind, stehen sie allen Schützinnen und
+                Schützen deines Vereins in Schiesskompass zur Verfügung – und niemand muss sie
+                selbst von Hand anlegen.
+            </p>
+
+            <h2>So funktioniert's</h2>
+            <ol>
+                <li>Auf den Button unten tippen – euer E-Mail-Programm öffnet sich mit vorbereitetem Text.</li>
+                <li>Die Unterlagen als Datei anhängen: <strong>PDF</strong>, <strong>Excel</strong> (.xlsx) oder <strong>Numbers</strong>.</li>
+                <li>Angaben im Text kurz ergänzen (Verein, Art, Programm-/Stich-Name, Jahr, Kontakt) und abschicken.</li>
+            </ol>
+
+            <p style="margin:24px 0;">
+                <a class="btn-primary" href="mailto:developer@herzogs.ch?subject=Vereinsprogramm%20einreichen&body=Verein%3A%0D%0AArt%20(Jahresprogramm%20%2F%20vereinsinternes%20Programm%20%2F%20Stich)%3A%0D%0AProgramm-%20%2F%20Stich-Name%3A%0D%0AKanton%20%2F%20Verband%3A%0D%0AJahr%3A%0D%0ADisziplin(en)%3A%0D%0AKontaktperson%3A%0D%0ATelefon%20%2F%20E-Mail%3A%0D%0A%0D%0ABitte%20die%20Unterlagen%20als%20PDF%2C%20Excel%20oder%20Numbers%20an%20dieses%20E-Mail%20anh%C3%A4ngen.%20Herzlichen%20Dank%21">
+                    Vereinsprogramm per E-Mail einreichen
+                </a>
+            </p>
+
+            <h2>Was passiert mit den Daten?</h2>
+            <p>
+                Die eingereichten Dateien gehen direkt an uns und bleiben <strong>privat</strong>. Sie werden
+                <strong>nicht</strong> veröffentlicht. Öffentlich wird ausschliesslich der geprüfte,
+                sachbezogene Katalog (Programme, Passen, Kranz-Anforderungen, Scheiben) – ohne
+                Personendaten. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.
+            </p>
+
+            <p class="muted">
+                Öffnet sich kein E-Mail-Programm? Schreibt direkt an
+                <a href="mailto:developer@herzogs.ch">developer@herzogs.ch</a>.
+            </p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>© <span id="year"></span> Schiesskompass</span>
+            <span><a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a></span>
+        </div>
+    </footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
