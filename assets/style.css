@@ -128,11 +128,39 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 }
 
 /* Hero */
-.hero { padding: 64px 0 48px; text-align: center; }
-.hero h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.1; margin: 0 0 14px; letter-spacing: -0.02em; }
-.hero .lead { font-size: clamp(18px, 3vw, 21px); color: var(--text-dim); max-width: 620px; margin: 0 auto; }
-.hero .slogan { margin: 22px auto 0; max-width: 620px; font-size: clamp(17px, 2.6vw, 20px); font-weight: 700; color: var(--accent); }
-.hero .kicker { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 13px; margin-bottom: 12px; }
+/* Hero – Hintergrundbild mit warmem Overlay, helle Schrift */
+.hero {
+    position: relative;
+    padding: 104px 0 92px;
+    text-align: center;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    overflow: hidden;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(20, 16, 10, 0.52), rgba(20, 16, 10, 0.74));
+}
+.hero .wrap { position: relative; z-index: 1; }
+.hero h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.1; margin: 0 0 14px; letter-spacing: -0.02em; color: #ffffff; }
+.hero .lead { font-size: clamp(18px, 3vw, 21px); color: rgba(255, 255, 255, 0.88); max-width: 620px; margin: 0 auto; }
+.hero .slogan { margin: 22px auto 0; max-width: 620px; font-size: clamp(17px, 2.6vw, 20px); font-weight: 700; color: #f2917a; }
+.hero .kicker { color: #eab8ab; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 13px; margin-bottom: 12px; }
+
+/* Dekorative Bilder (Über, Katalog, Wartung) */
+.figure-img {
+    display: block;
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin: 8px 0 22px;
+}
+.figure-img.banner { max-height: 190px; }
 
 /* Karten-Raster */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 32px 0; }
