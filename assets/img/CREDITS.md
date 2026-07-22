@@ -10,5 +10,8 @@ zivile Sportschützen-Motive). Fachlich und sicherheitstechnisch geprüft vor Ei
 | ueber.jpg | Munitionsschachteln, Wiederladepresse, Waffenschrank | Über & Kontakt |
 | katalog.jpg | Konzentrische Zielscheiben, Standblatt | Katalog (Banner) |
 | wartung.jpg | Reinigungsset auf Werkbank (ohne Munition) | Hilfe (Wartung) |
+| einreichen.jpg | Programmblätter, Kuvert, Bleistift | Einreichen (Banner) |
+| hilfe.jpg | Offener Ordner mit Register, Bleistift | Hilfe (Banner) |
+| glossar.jpg | Leere Karteikarten, Bleistift | Glossar (Banner) |
 
 Bearbeitung: PNG → JPEG (Qualität 72) via sips, sonst unverändert.
